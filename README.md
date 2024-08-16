@@ -21,6 +21,6 @@ classing: manage and show the barrages, show the latest attendance records, tool
 ### Student Client
 language: Android Kotlin  
 support:  
-courses list management:  add courses and drop courses, see oneself attendance records
+courses list management:  add courses and drop courses, see oneself attendance records  
 classing: see oneself latest attendance records, check in by GPS, send barrage to teacher
 
