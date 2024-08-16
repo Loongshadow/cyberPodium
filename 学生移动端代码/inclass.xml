@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical"  
+    android:weightSum="10">  
+  
+    <!-- 区域零 -->  
+    <TextView  
+        android:id="@+id/label_zero"  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:text="Label"  
+        android:textSize="16sp"/>  
+  
+    <!-- 区域一 -->  
+    <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="8"  
+        android:orientation="vertical"  
+        android:padding="16dp">  
+  
+        <!-- 标签 -->  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="历史考勤记录"  
+            android:textSize="18sp"  
+            android:layout_marginBottom="8dp"/>  
+  
+        <!-- 列表 -->  
+        <ListView
+            android:id="@+id/attendance_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp"/> 
+  
+    </LinearLayout>  
+  
+    <!-- 区域二 -->  
+    <Button  
+        android:id="@+id/back_button"  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1"  
+        android:text="返回"  
+        android:textSize="16sp"  
+        android:gravity="center"/>  
+  
+</LinearLayout>
