@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>inClass</class>
+ <widget class="QWidget" name="inClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CyberPodium(PC)</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="left_wdg" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="groupBoxCourseInfo">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="title">
+         <string>课程信息</string>
+        </property>
+        <layout class="QFormLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="labelCourseName">
+           <property name="text">
+            <string>课程名称：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEditCourseName"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="labelCourseID">
+           <property name="text">
+            <string>课程ID：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEditCourseID">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelTime">
+           <property name="text">
+            <string>时间：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEditTime"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="labelLocation">
+           <property name="text">
+            <string>地点：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEditLocation"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="labelNotes">
+           <property name="text">
+            <string>备注：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QTextEdit" name="textEditNotes"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnEditCourse">
+        <property name="text">
+         <string>编辑课程信息</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="right_wdg" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,0">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetAttendance">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>学生姓名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>学生ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>考勤记录</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>备注</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnEditRemarks">
+        <property name="text">
+         <string>启动编辑功能</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

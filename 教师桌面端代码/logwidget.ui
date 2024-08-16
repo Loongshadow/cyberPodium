@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogWidget</class>
+ <widget class="QWidget" name="LogWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="logwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>430</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#logwidget{
+    min-height: 330px;
+    min-width: 430px;
+    background-color: white;
+    border-radius: 5%;
+}
+QLabel#background_blue{
+    min-height: 120px;
+    min-width: 430px;
+    background-color: rgb(5,186,251);
+    color: white;
+    font-size: 25px;
+    font-family: &quot;微软雅黑&quot;;
+    font-weight: bold; /* 添加粗体属性 */
+}
+QPushButton#CloseBtn{
+    min-height: 20px;
+    min-width: 20px;
+    background-color: rgb(5,186,251);
+    border-image: url(:/image/imgPool/close_X.png);
+    border: white;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+QPushButton#CloseBtn:hover{
+    min-height: 20px;
+    min-width: 20px;
+    background-color: red;
+    border-image: url(:/image/imgPool/close_X.png);
+    border: white;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+QLineEdit#UserName{
+    min-height: 35px;
+    min-width: 235px;
+    border:none;
+    border-bottom: 1px solid  rgb(200,200,200);
+    font:  18px &quot;微软雅黑&quot;;
+    font-weight: 3px;
+}
+QLineEdit#UserName:hover{
+    min-height: 35px;
+    min-width: 235px;
+    border:none;
+    border-bottom: 1px solid  rgb(175,175,175);
+    font:  18px &quot;微软雅黑&quot;;
+    font-weight: 3px;
+}
+QLineEdit#UserName:focus{
+    min-height: 35px;
+    min-width: 235px;
+    border:none;
+    border-bottom: 1px solid  rgb(5,186,251);
+    font:  18px &quot;微软雅黑&quot;;
+    font-weight: 3px;
+}
+QLineEdit#PassWord{
+    min-height: 35px;
+    min-width: 235px;
+    border:none;
+    border-bottom: 1px solid  rgb(200,200,200);
+    font:  18px &quot;微软雅黑&quot;;
+    font-weight: 3px;
+}
+QLineEdit#PassWord:hover{
+    min-height: 35px;
+    min-width: 235px;
+    border:none;
+    border-bottom: 1px solid  rgb(175,175,175);
+    font:  18px &quot;微软雅黑&quot;;
+    font-weight: 3px;
+}
+QLineEdit#PassWord:focus{
+    min-height: 35px;
+    min-width: 235px;
+    border:none;
+    border-bottom: 1px solid  rgb(5,186,251);
+    font:  18px &quot;微软雅黑&quot;;
+    font-weight: 3px;
+}
+QPushButton#login{
+    min-height: 28px;
+    min-width: 235px;
+    background-color: rgb(5,186,251);
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    font-family: &quot;微软雅黑&quot;;
+}
+QPushButton#registerBtn{
+    min-height: 28px;
+    min-width: 235px;
+    background-color: rgb(5,186,251);
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    font-family: &quot;微软雅黑&quot;;
+}
+QPushButton#switchBtn
+{
+    color: rgb(200,200,200);
+    background-color: white;
+    border: white;
+}
+QLabel#user_lab{
+    border-image: url(:/image/imgPool/log_user.png);
+}
+QLabel#pwd_lab{
+    border-image: url(:/image/imgPool/log_pwd.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="CloseBtn">
+    <property name="geometry">
+     <rect>
+      <x>407</x>
+      <y>0</y>
+      <width>24</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="background_blue">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>430</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CyberPodium(PC)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="login">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>280</y>
+      <width>241</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registerBtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>280</y>
+      <width>241</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>注册</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="switchBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>注册</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PassWord">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>190</y>
+      <width>235</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="UserName">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>150</y>
+      <width>235</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="user_lab">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>150</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pwd_lab">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>UserName</zorder>
+   <zorder>background_blue</zorder>
+   <zorder>CloseBtn</zorder>
+   <zorder>login</zorder>
+   <zorder>registerBtn</zorder>
+   <zorder>switchBtn</zorder>
+   <zorder>PassWord</zorder>
+   <zorder>user_lab</zorder>
+   <zorder>pwd_lab</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

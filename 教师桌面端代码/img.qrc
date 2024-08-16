@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>imgPool/log_user.png</file>
+        <file>imgPool/log_pwd.png</file>
+        <file>imgPool/close_X.png</file>
+        <file>imgPool/logo.png</file>
+    </qresource>
+</RCC>
